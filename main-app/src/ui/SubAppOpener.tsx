@@ -1,14 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Dispatch} from "redux";
-import {openSubApp} from "./actions";
+import {Dispatch} from 'redux';
+import {openSubApp} from './actions';
 
 interface SubAppOpenerProps {
     openSubApp: () => void;
 }
 
 const SubAppOpener: React.FC<SubAppOpenerProps> = ({openSubApp}: SubAppOpenerProps) => {
-    console.log(openSubApp);
     return (<button onClick={() => {openSubApp()}}>openSubApp</button>);
 };
 

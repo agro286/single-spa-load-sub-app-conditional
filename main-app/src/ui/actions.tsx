@@ -6,11 +6,15 @@ export function openSubApp() {
     return {type: OPEN_SUBAPP}
 }
 
-const initialState = {
+export type SubAppState = {
+    subAppOpen: boolean;
+}
+
+const initialState: SubAppState = {
     subAppOpen: false
 };
 
-export function reducer(state = initialState, action: Action) {
+export function reducer(state: SubAppState = initialState, action: Action<string>) {
     switch (action.type) {
         case OPEN_SUBAPP:
             return {...state, subAppOpen: true};
