@@ -10,13 +10,7 @@ const reactLifecycles = singleSpaReact({
 });
 
 export const parcelConfig = {
-    bootstrap() {
-        return reactLifecycles.bootstrap;
-    },
-    mount() {
-        return reactLifecycles.mount;
-    },
-    unmount() {
-        return reactLifecycles.unmount;
-    }
+    bootstrap: reactLifecycles.bootstrap,
+    mount: reactLifecycles.mount,
+    unmount: reactLifecycles.unmount,
 };
