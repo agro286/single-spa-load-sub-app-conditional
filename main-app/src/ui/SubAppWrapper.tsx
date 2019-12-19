@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 // @ts-ignore
 import Parcel from 'single-spa-react/parcel';
-import {runScript} from '../app-registrations/utils';
+import {runScript} from '../utils';
 import {mountRootParcel, ParcelConfig} from 'single-spa';
 import {SubAppState} from "./actions";
 
